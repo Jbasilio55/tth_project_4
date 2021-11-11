@@ -1,5 +1,6 @@
 // Import button, form, grid, and navigation
-@import '/button.scss';
-@import '/form.scss';
-@import '/grid.scss';
-@import '/style_guide_v7/scss/component/navigation';
+@import 'navigation';
+@import 'image';
+@import 'form';
+@import 'button';
+@import 'grid';

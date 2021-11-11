@@ -1,0 +1,19 @@
+.form {
+    flex-basis: 100%;
+}
+.input{
+    display: block;
+    border: none;
+    border-bottom: 5px solid $color-secondary;
+    width: 94%;
+    margin: 10px auto 0;
+    padding: 10px;
+}
+.hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}

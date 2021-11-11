@@ -1,0 +1,26 @@
+
+// logo
+.img-logo {
+    @include img-center;
+}
+// nav
+.nav {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    padding-left: 0;
+}
+.nav-link {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 5px;
+    transition: background-color .2s ease-in-out,
+                color .2s ease-in-out;
+    &:hover {
+        background-color: $color-secondary;
+        color: $white;
+    }
+}
+
