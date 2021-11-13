@@ -14,21 +14,21 @@ a {
 }
 
 // Headers
-.headline-primary {
+h1 {
     color: #58e1c1;
     margin-left: 10px;
 }
-.headline-secondary {
+h4 {
     font-weight: 300;
     color: $color-primary;
 }
-// links
-.link {
+// link in paragraph
+p a {
     color: $color-third;
     font-weight: 700;
 }
 // quote
-.blockquote {
+blockquote {
     font-size: 1.5em;
     font-weight: 300;
     font-style: italic;

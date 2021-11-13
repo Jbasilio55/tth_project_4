@@ -2,5 +2,26 @@
 $font-stack-primary: 'Lato', sans-serif;
 $white: #fff;
 $color-primary: #777;
-$color-secondary: #58e1c1;;
+$color-secondary: #58e1c1;
 $color-third: #51ddfc;
+
+$color-default: lighten(#51ddfc, 10%); 
+$color-success: lighten(#58e1c1, 10%); 
+$color-error: lighten(#e4757a, 10%); 
+$color-warning: lighten(#fd7856, 10%); 
+$color-info: #deb2ee; 
+
+$color-info-dark: darken(#927bc1, 1%); 
+$color-default-dark: #4da2bb; 
+
+$btn-themes: (
+    'col-3': $color-info,
+    'col-4': $color-default,
+    'col-6': $color-default-dark,
+    'col-5': $color-success,
+    'col-7': $color-error,
+    'col-8': $color-warning,
+    'col-12': $color-success,
+);
+
+$break-md: 768px;

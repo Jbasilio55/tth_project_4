@@ -1,18 +1,59 @@
 // Grid
-
 .container {
     padding: 0 10px;
+    @media (min-width: $break-md){
+        @include center-auto {
+            max-width: 1400px;
+        }
+    }
 }
+
 .row {
     display: flex;
     flex-direction: column;
     padding: 1em 10px;
-}
+    @media (min-width: $break-md){
+        flex-direction: row;
+    }
+}  
 
-[class^=col] {
-    margin-top: 10px;
+[class^='col-'] {
     flex-basis: 100%;
+    border-radius: 5px;
     min-height: 25px;
     padding: 10px;
-    border-radius: 5px;
+    margin-top: 10px;
+    @media (min-width: $break-md){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+    }
+}
+
+@media (min-width: $break-md) {
+    [class^='col-'] + [class^='col-'] {
+        margin-left: 10px;
+    }
+    .card {
+        flex-basis: 100%;
+    }
+    .col-7{
+        @include center-auto; 
+    }
+}
+
+// functions
+@each $btn-theme, $color in $btn-themes {
+    .#{$btn-theme}.theme{
+        background-color: $color;
+    }
+}
+
+@media (min-width: $break-md){
+    @for $i from 1 through 12 {
+        .col-#{$i} {
+            flex-basis: ($i/ 12) * 100%;
+        }
+    }
 }

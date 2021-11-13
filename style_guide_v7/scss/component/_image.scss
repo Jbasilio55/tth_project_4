@@ -1,19 +1,22 @@
-
+// logo
+.img-logo {
+    @include center-auto;
+    
+}
 // Images
 
 %img-mt-mw{
     margin-top: 10px;
     max-width: 100%; 
 }
-
 .img-avatar {
-    @include img-center {
+    @include center-auto {
     @extend %img-mt-mw;
     max-height: 100%;   
     }
 }
 .img-frame {
-    @include img-center {
+    @include center-auto {
     @extend %img-mt-mw;
     padding: 13px;
     border: 1px solid #ccc;   
